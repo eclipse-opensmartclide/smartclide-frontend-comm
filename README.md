@@ -33,7 +33,7 @@ The upcoming features will include:
 ```json
 {
   "dependencies": {
-    "smartclide-frontend-comm": "latest"
+    "@unparallel/smartclide-frontend-comm": "latest"
   }
 }
 ```
@@ -47,7 +47,7 @@ npm install
 ## Import the module
 
 ```javascript
-import {messageTypes, buildMessage} from "smartclide-frontend-comm/index";
+import {messageTypes, buildMessage} from "@unparallel/smartclide-frontend-comm";
 ```
 
 ## Build the message
