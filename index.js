@@ -20,11 +20,19 @@ export function buildMessage(messageType, messageContent){
         type: messageType
     };
 
-    if(!messageContent)
-        throw new Error("Message type TOKEN_INFO requires non-null content")
-
-    if(messageType === messageTypes.TOKEN_INFO)
-        message.content = messageContent;
+    switch (messageType){
+        case messageTypes.TOKEN_INFO:
+            if(!messageContent)
+                throw new Error("Message type TOKEN_INFO requires non-null content");
+            message.content = messageContent;
+            break;
+        case messageTypes.COMPONENT_HELLO:
+            break;
+        case messageTypes.TOKEN_REVOKE:
+            break;
+        default:
+            throw new Error("Invalid message type");
+    }
 
     return message;
 }

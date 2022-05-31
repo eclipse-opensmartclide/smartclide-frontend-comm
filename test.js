@@ -12,7 +12,7 @@
 import {messageTypes, buildMessage} from "./index.js";
 
 try{
-    let data = buildMessage(messageTypes.TOKEN_INFO, "message")
+    let data = buildMessage(messageTypes.TOKEN_INFO, "token")
     console.log(JSON.stringify(data, undefined, 4))
 }catch (e) {
     console.log(e)
