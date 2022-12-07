@@ -1,3 +1,5 @@
+_The code of this [npm package](https://www.npmjs.com/package/@unparallel/smartclide-frontend-comm) was moved to [smartclide-ide-front-end](https://github.com/eclipse-opensmartclide/smartclide-ide-front-end)._
+
 # Overview
 
 This module builds a message according to the protocol established for the communication between the SmartCLIDE IDE
